@@ -1,0 +1,20 @@
+
+SELECT DISTINCT
+    OP.DocEntry AS "N. OP",
+    OP.ItemCode AS "Codigo Pai",
+    OP.PlannedQty AS "Qtd Planejada",
+    LINHA.ItemCode AS "Codigo insumo",
+    LINHA.Dscription AS "Descricao",
+    LINHA.Quantity AS "Quantidade",
+    LINHA.Price AS "Custo medio",
+    LINHA.Quantity * LINHA.Price AS "Custo",
+	lote.BatchNum as "LOTE",
+	LINHA.LineNum 'LINHA OP',
+	LOTE.BaseLinNum 'lINHA LOTE',
+	LOTE.BaseType
+FROM OWOR OP
+INNER JOIN IGE1 LINHA ON LINHA.BaseRef = OP.DocEntry
+LEFT JOIN IBT1 LOTE ON LOTE.BaseEntry = LINHA.DocEntry AND LOTE.BaseLinNum = LINHA.LineNum
+WHERE 
+(LOTE.BaseTypE = 60 OR LOTE.BaseTypE IS NULL) AND 
+OP.DocEntry = 8971

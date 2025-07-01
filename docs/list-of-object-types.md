@@ -4,7 +4,6 @@ https://sap-b1-blog.com/en/glossary/list-of-object-types-in-sap-business-one/
 
 | Table | Table description | German designation | Primary Key | Object Type |
 |---|---|---|---|---|
- | Table | Table description |  German designation | Primary Key | Object Type | 
  | OACT | G/L Accounts | ledger accounts / General ledger accounts | AcctCode | 1 | 
  | OCRD | Business Partner | Business partner | card code | 2 | 
  | ODSC | Bank codes | routing numbers | AbsEntry | 3 | 

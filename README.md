@@ -1,10 +1,8 @@
-# 📦 Repositório SAP Business One – SQLs, Views, Addons & Utilitários
+# 📦 Repositório SAP Business One 
 
 Este repositório tem como objetivo reunir scripts, queries SQL, procedures, views e utilitários que facilitam o trabalho de consultores SAP Business One no dia a dia.
 
 > ⚠️ Todos os conteúdos aqui são livres para uso, mas **você é responsável pelo que roda no seu ambiente**. Teste sempre em ambiente de homologação antes.
-
----
 
 ## 📁 Estrutura do Repositório
 

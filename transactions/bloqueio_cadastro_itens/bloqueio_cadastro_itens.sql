@@ -1,4 +1,9 @@
 -- Paulo Ferraz - 01/07/2025 - Bloqueia o usuário qualidade realizar modificação de cadastro
+-- Essa transaction bloqueia um determinado usuário de cadastrar ou modificar itens no SAP B1
+
+-- @object_type = 4 é o tipo de documento Cadastro de Itens
+
+
 IF (@object_type = '4' AND (@transaction_type = 'U' OR @transaction_type = 'A'))
 
 BEGIN

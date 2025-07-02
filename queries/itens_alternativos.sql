@@ -1,5 +1,3 @@
-
-
 **Comando para a função universal**
 SELECT 
     A."AltItem" AS "Código Alternativo", 
